@@ -1,11 +1,14 @@
 {
-  "name": "backend",
+  "name": "socialapi",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "type": "module",
+  "engines": {
+    "node": ">=18.6.0"
+  },
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "assert": "^2.0.0",

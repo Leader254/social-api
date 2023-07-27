@@ -27,7 +27,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
   pingInterval: 60000,
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://ambitious-hill-0b7b16c0f.3.azurestaticapps.net",
   },
 });
 
@@ -42,7 +42,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://ambitious-hill-0b7b16c0f.3.azurestaticapps.net",
   })
 );
 app.use(cookieParser());
